@@ -1,8 +1,8 @@
-agent:
-  container: terraform
 pipelines:
   release:
     pipeline:
+      agent:
+        container: terraform
       stages:
       - name: wenlong
         steps:

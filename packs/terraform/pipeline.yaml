@@ -1,0 +1,13 @@
+agent:
+  container: terraform
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        stages:
+        - name: wenlong
+          steps:
+          - name: case1
+            sh: |
+              ls -l
+              terraform version
